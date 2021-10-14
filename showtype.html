@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<style>
+
+</style>
+</head>
+  
+<body style="text-align:center;">
+
+    <textarea id="input" name="input" style="margin: 0px; width: 470px; height: 198px;"></textarea>
+	<button onclick="alfor()" id="sub">ALL 4 BOTS Send</button>
+	<button onclick="onlyone()">Only one send</button>
+	<br/>
+----------------------------------------------------------------------------------------------------------------------------------------------
+	<br/>
+----------------------------------------------------------------------------------------------------------------------------------------------
+	<br/>
+	<textarea id="inputo"/></textarea>
+	<textarea id="inputt"/></textarea>
+	<textarea id="inputtr"/></textarea>
+	<textarea id="inputf"/></textarea>
+	<br/>
+	bot 1                            bot 2                 bot3                                 bot4
+	<br/>
+	<button onclick="onebyne()">Send all</button>
+    <script>
+        function alfor() {
+			var message = document.getElementById("input").value;
+			var propic = "";
+			var webhook = "https://discord.com/api/webhooks/874167641495994388/d0hRJK2RurUIZGYiCXNWz8hIGz9dpjRW_8xe9F4BuMIRVYnraRyICQgDn2ncLNJ5ufc3";
+			var webhookt = "https://discord.com/api/webhooks/898261961358323812/QsV0rtApBKqzya2sh5LfLfOE_uEV5f7Nb8lM2E4iMKcP5JdpSQY7P0jgCHjXOpmn1zCy";
+			var webhooktr = "https://discord.com/api/webhooks/898262002366029875/Eh2FPjHSZ24kdDXORckE4cw9ExpaNui0iQQ2Cz6WSfmzWDKCTbTrsvXD1TWV_sQp1Lqu";
+			var webhooktrt = "https://discord.com/api/webhooks/898262066090098739/zvfYSu5BqIdRLDiAKd74A92102Ln1Cf_O_tCLYt64DdXhDgB4KON0lnAyAE9BNsmUuJ6";
+			var request = new XMLHttpRequest();
+			request.open("POST",webhook);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_1",
+            avatar_url: propic,
+            content: message
+								 }
+			request.send(JSON.stringify(params));
+			//-----------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhookt);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_2",
+            avatar_url: propic,
+            content: message
+								 }
+			request.send(JSON.stringify(params));
+			//--------------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhooktr);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_3",
+            avatar_url: propic,
+            content: message
+								 }
+			request.send(JSON.stringify(params));
+			//---------------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhooktrt);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_4",
+            avatar_url: propic,
+            content: message
+								 }
+			request.send(JSON.stringify(params));
+        }
+		function onlyone(){
+			var message = document.getElementById("input").value;
+			var propic = "";
+			var webhook = "https://discord.com/api/webhooks/874167641495994388/d0hRJK2RurUIZGYiCXNWz8hIGz9dpjRW_8xe9F4BuMIRVYnraRyICQgDn2ncLNJ5ufc3";
+			var webhookt = "https://discord.com/api/webhooks/898261961358323812/QsV0rtApBKqzya2sh5LfLfOE_uEV5f7Nb8lM2E4iMKcP5JdpSQY7P0jgCHjXOpmn1zCy";
+			var webhooktr = "https://discord.com/api/webhooks/898262002366029875/Eh2FPjHSZ24kdDXORckE4cw9ExpaNui0iQQ2Cz6WSfmzWDKCTbTrsvXD1TWV_sQp1Lqu";
+			var webhooktrt = "https://discord.com/api/webhooks/898262066090098739/zvfYSu5BqIdRLDiAKd74A92102Ln1Cf_O_tCLYt64DdXhDgB4KON0lnAyAE9BNsmUuJ6";
+			var request = new XMLHttpRequest();
+			request.open("POST",webhook);
+			request.setRequestHeader('Content-type', 'application/json');
+			var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_1",
+            avatar_url: propic,
+            content: message
+				}
+			request.send(JSON.stringify(params));
+		}
+		function onebyne(){
+			var messageo = document.getElementById("inputo").value;
+			var messaget = document.getElementById("inputt").value;
+			var messagetr = document.getElementById("inputtr").value;
+			var messagef = document.getElementById("inputf").value;
+			var propic = "";
+			var webhook = "https://discord.com/api/webhooks/874167641495994388/d0hRJK2RurUIZGYiCXNWz8hIGz9dpjRW_8xe9F4BuMIRVYnraRyICQgDn2ncLNJ5ufc3";
+			var webhookt = "https://discord.com/api/webhooks/898261961358323812/QsV0rtApBKqzya2sh5LfLfOE_uEV5f7Nb8lM2E4iMKcP5JdpSQY7P0jgCHjXOpmn1zCy";
+			var webhooktr = "https://discord.com/api/webhooks/898262002366029875/Eh2FPjHSZ24kdDXORckE4cw9ExpaNui0iQQ2Cz6WSfmzWDKCTbTrsvXD1TWV_sQp1Lqu";
+			var webhooktrt = "https://discord.com/api/webhooks/898262066090098739/zvfYSu5BqIdRLDiAKd74A92102Ln1Cf_O_tCLYt64DdXhDgB4KON0lnAyAE9BNsmUuJ6";
+			var request = new XMLHttpRequest();
+			request.open("POST",webhook);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_1",
+            avatar_url: propic,
+            content: messageo
+								 }
+			request.send(JSON.stringify(params));
+			//-----------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhookt);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_2",
+            avatar_url: propic,
+            content: messaget
+								 }
+			request.send(JSON.stringify(params));
+			//--------------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhooktr);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_3",
+            avatar_url: propic,
+            content: messagetr
+								 }
+			request.send(JSON.stringify(params));
+			//---------------------------------------------------------------------------------------------------------------------
+			request = new XMLHttpRequest();
+						request.open("POST",webhooktrt);
+			request.setRequestHeader('Content-type', 'application/json');
+			        var params = {     // now setting everything that user entered into a var called params
+            username: "webhook_bot_4",
+            avatar_url: propic,
+            content: messagef
+								 }
+			request.send(JSON.stringify(params));
+		}
+    </script>
+</body>
+  
+</html>
